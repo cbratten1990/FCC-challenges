@@ -1,0 +1,74 @@
+/* Reset some default margin and padding */
+body, h1, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Add some color to the body element */
+body {
+  background: linear-gradient(
+    to right,
+    #000000,
+    #696969,
+    #D3D3D3
+  );
+}
+
+/* Center the main container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Create a two-column layout using Flexbox */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 2rem;
+}
+
+/* Set the width for the editor and preview sections */
+.editor, .preview {
+  flex: 1;
+  height: 400px; /* Set a fixed height for both sections */
+  overflow-y: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  border: 1px solid #ccc; /* Add border to both sections */
+}
+
+/* Style the editor and preview sections */
+.editor {
+  background-color: #f7f7f7;
+  font-size: 16px; /* Adjust the font size for the editor */
+  margin-right: 0.5rem;
+}
+
+.preview {
+  background-color: #fff;
+  font-size: 16px; /* Adjust the font size for the preview */
+  margin-left: 0.5rem;
+}
+
+
+/* Style the React logo */
+img {
+  max-width: 100%; /* To ensure the image doesn't exceed its container's width */
+  height: auto; /* To maintain the aspect ratio of the image */
+}
+
+/* Increase the side of the textarea element */
+textarea {
+  height: 400px;
+  width: 350px;
+}
+
+/* Change the font-family of headers */
+h1, h5 {
+  font-family: "Courier New", serif;
+}
